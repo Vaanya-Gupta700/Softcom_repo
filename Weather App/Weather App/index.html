@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App (Open-Meteo)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Weather Card -->
+    <div class="card">
+      <div class="search-box">
+        <input type="text" placeholder="Enter city name" id="search-box" spellcheck="false">
+        <button id="search-btn"><img src="./images/search.png" alt="Search"></button>
+      </div>
+
+      <div class="weather-box">
+        <img src="./images/clear.png" alt="Weather" class="weather-icon">
+        <h1 class="temp"></h1>
+        <h2 class="city"></h2>
+        <div class="details">
+          <div class="col">
+            <img src="./images/humidity.png" alt="">
+            <div>
+              <p class="humidity"></p>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="./images/wind.png" alt="">
+            <div>
+              <p class="wind"></p>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Search History -->
+    <div class="history-box">
+      <h3>Search History</h3>
+      <ul id="history-list"></ul>
+    </div>
+  </div>
+
+   <script src="script2.js"></script>
+   
+  
+   <!-- <script src="./"></script> -->
+    <!-- can attach different files -->
+</body>
+</html>
